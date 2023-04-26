@@ -1,0 +1,239 @@
+// Bootstrap Customization Starts
+// Colors
+$primary: #451745;
+$secondary: #612861;
+$warning: #ffc50d;
+$gray-900: #212529;
+$box-shadow-lg: 0 1.25rem 3.75rem rgba($gray-900, 0.1);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+// Bootstrap Customization Ends
+// Global Starts
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+}
+// Global Ends
+// Utilities Starts
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  margin-bottom: 10rem;
+}
+
+.section-overline {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: var(--bs-secondary);
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--bs-gray-900);
+
+  @media screen and (max-width: 48rem) {
+    font-size: 1.5rem;
+  }
+}
+// Utilities Ends
+// Components Starts
+.btn {
+  --bs-btn-font-weight: 600;
+  --bs-btn-padding-x: 2.5rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-border-radius: 5rem;
+}
+// Components Ends
+// Navbar/Header Starts
+.navbar {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.header {
+  padding: 10rem 0;
+  margin-bottom: 10rem;
+
+  .container {
+    z-index: 10;
+  }
+
+  &-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--bs-white);
+
+    @media screen and (max-width: 48rem) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--bs-white);
+    opacity: 0.5;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1rem;
+    }
+  }
+
+  &-image {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      width: 125rem;
+    }
+  }
+}
+// Navbar/Header Ends
+// Services Starts
+.services,
+.how-it-works {
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--bs-gray-100);
+    padding: 2.5rem;
+    border: 0.0625rem solid var(--bs-gray-200);
+    border-radius: 1.25rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+
+      & .services-icon,
+      .how-it-works-icon {
+        background-color: var(--bs-secondary);
+      }
+
+      & .services-heading,
+      .how-it-works-heading {
+        color: var(--bs-white);
+      }
+
+      & .services-description {
+        color: var(--bs-white);
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 2.5rem;
+    transition: all 0.2s ease;
+  }
+
+  &-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--bs-gray-900);
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--bs-gray-600);
+
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1rem;
+    }
+  }
+}
+// Services Ends
+// How It Works Starts
+.how-it-works {
+  &-item {
+    align-items: center;
+    padding-top: 0;
+  }
+
+  &-icon {
+    margin-top: -2.5rem;
+  }
+}
+// How It Works Ends
+// Footer Starts
+.footer {
+  padding-top: 25rem;
+
+  .container {
+    z-index: 10;
+  }
+
+  &-image {
+    right: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: rotate(180deg);
+
+    img {
+      width: 125rem;
+    }
+  }
+
+  &-social {
+    &-item {
+      width: 3rem;
+      height: 3rem;
+      background: var(--bs-secondary);
+      border-radius: 50%;
+      color: var(--bs-white);
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: var(--bs-white);
+        color: var(--bs-secondary);
+      }
+    }
+  }
+
+  input {
+    &::placeholder {
+      color: var(--bs-white);
+      opacity: 0.5;
+    }
+  }
+}
+// Footer Ends

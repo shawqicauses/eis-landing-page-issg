@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "name": "eslint-prettier-template",
+  "description": "ESLint/Prettier ready-to-use template by @shawqicauses",
+  "author": "shawqicauses <shawqicauses@outlook.com>",
+  "license": "ISC",
+  "scripts": {
+    "sass:start": "sass style.scss:style.css --no-source-map -w",
+    "rtlcss:start": "rtlcss style.css style.rtl.css",
+    "watch-cli:start": "watch -p style.scss -c \"npm-run-all sass:start rtlcss:start\""
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "bootstrap": "5.2.3",
+    "jquery": "3.6.4",
+    "npm-run-all": "4.1.5",
+    "sass": "1.62.0"
+  }
+}
