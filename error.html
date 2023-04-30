@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE = edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>404 - Not Found | Sundouq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar:Starts -->
+    <nav
+      class="navbar navbar-expand-xl navbar-dark position-absolute w-100 py-4">
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          <h1 class="m-0">SUNDOUQ</h1>
+        </a>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+          class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-content" class="collapse navbar-collapse"></div>
+      </div>
+    </nav>
+    <!-- Navbar:Ends -->
+    <!-- Header:Starts -->
+    <header
+      class="header d-flex justify-content-center align-items-center position-relative bg-primary"
+      style="min-height: 100vh; margin: 0">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <h1 class="header-heading mb-4">404 - Not Found</h1>
+            <p class="header-description mb-5">
+              We seek to be the ideal partner for the electronic stores in
+              Kingdom of Saudi Arabia to introduce Logistics and storage
+              services.
+            </p>
+            <button class="btn btn-secondary me-2">Back To Home</button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="images/404.png" alt="404 Image" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header:Ends -->
+    <!-- Login:Starts -->
+    <div
+      id="login-modal"
+      aria-labelledby="login-modal-label"
+      aria-hidden="true"
+      tabindex="-1"
+      class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="login-modal-label" class="modal-title fs-5">Login</h1>
+            <button
+              type="button"
+              aria-label="Close"
+              data-bs-dismiss="modal"
+              class="btn-close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="email-username" class="form-label">
+                  Email or username
+                </label>
+                <input
+                  id="email-username"
+                  type="text"
+                  placeholder="e.g. me@example.com"
+                  class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="************"
+                  class="form-control" />
+              </div>
+              <div class="flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    id="remember-me"
+                    type="checkbox"
+                    class="form-check-input" />
+                  <label for="remember-me" class="form-check-label">
+                    Remember me
+                  </label>
+                </div>
+                <p class="mb-0">
+                  <a href="#" class="fw-medium text-primary">
+                    Forget password?
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer flex justify-content-between">
+            <p class="mb-0">
+              Need Help?
+              <a href="#" class="fw-medium text-primary">Contact us</a>
+            </p>
+            <button type="button" class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login:Ends -->
+    <!-- JavaScript:Starts -->
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <!-- jQuery JavaScript -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- IonIcons JavaScript -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
