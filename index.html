@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar:Starts -->
     <nav
-      class="navbar navbar-expand-xl navbar-dark position-absolute w-100 py-4">
+      class="navbar navbar-expand-xl navbar-dark position-fixed bg-primary w-100 py-4">
       <div class="container">
         <a href="#home" class="navbar-brand">
           <h1 class="m-0">SUNDOUQ</h1>
@@ -686,7 +686,12 @@
                   </label>
                 </div>
                 <p class="mb-0">
-                  <a href="#" class="fw-medium text-primary">
+                  <a
+                    href="#"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#forgot-password-modal"
+                    class="fw-medium text-primary">
                     Forget password?
                   </a>
                 </p>
@@ -698,12 +703,56 @@
               Need Help?
               <a href="#" class="fw-medium text-primary">Contact us</a>
             </p>
-            <button type="button" class="btn btn-primary">Save Changes</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Login:Ends -->
+    <!-- Forgot Password:Starts -->
+    <div
+      id="forgot-password-modal"
+      aria-labelledby="forgot-password-modal-label"
+      aria-hidden="true"
+      tabindex="-1"
+      class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="forgot-password-modal-label" class="modal-title fs-5">
+              Forgot Password
+            </h1>
+            <button
+              type="button"
+              aria-label="Close"
+              data-bs-dismiss="modal"
+              class="btn-close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="email-username" class="form-label">
+                  Email or username
+                </label>
+                <input
+                  id="email-username"
+                  type="text"
+                  placeholder="e.g. me@example.com"
+                  class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer flex justify-content-between">
+            <p class="mb-0">
+              Need Help?
+              <a href="#" class="fw-medium text-primary">Contact us</a>
+            </p>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password:Ends -->
     <!-- JavaScript:Starts -->
     <!-- Bootstrap JavaScript -->
     <script

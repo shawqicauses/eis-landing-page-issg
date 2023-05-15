@@ -10944,3 +10944,33 @@ body {
   background-repeat: no-repeat;
   min-height: 40rem;
 }
+
+.groups-body-bg {
+  min-height: 100%;
+  background-image: linear-gradient(rgba(69, 23, 69, 0.75), rgba(69, 23, 69, 0.75)), url(./images/groups.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.groups-contact-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 0.125rem solid var(--bs-gray-200);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bs-secondary);
+}
+.groups .services-item {
+  padding: 1.25rem;
+}
+.groups .services-item:hover {
+  background: var(--bs-warning);
+}
+.groups .services-image {
+  width: 100%;
+  aspect-ratio: 19/16;
+  border-radius: 1rem;
+  margin-bottom: 1.25rem;
+}

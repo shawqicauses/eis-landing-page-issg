@@ -269,3 +269,43 @@ body {
   }
 }
 // Services Ends
+// Groups Page
+.groups {
+  &-body-bg {
+    min-height: 100%;
+    background-image: linear-gradient(
+        rgb(69, 23, 69, 0.75),
+        rgb(69, 23, 69, 0.75)
+      ),
+      url(./images/groups.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-contact-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 0.125rem solid var(--bs-gray-200);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bs-secondary);
+  }
+
+  .services-item {
+    padding: 1.25rem;
+
+    &:hover {
+      background: var(--bs-warning);
+    }
+  }
+
+  .services-image {
+    width: 100%;
+    aspect-ratio: 19 / 16;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
