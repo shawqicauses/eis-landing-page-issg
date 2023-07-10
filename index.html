@@ -78,6 +78,11 @@
               class="btn btn-light">
               Login
             </button>
+            <input
+              id="color-theme"
+              type="color"
+              name="color-theme"
+              value="#fafafa" />
           </div>
         </div>
       </div>
@@ -755,6 +760,7 @@
     <!-- Forgot Password:Ends -->
     <!-- JavaScript:Starts -->
     <!-- Bootstrap JavaScript -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       crossorigin="anonymous"></script>
@@ -762,7 +768,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       crossorigin="anonymous"></script>
     <!-- jQuery JavaScript -->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -770,5 +775,22 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      document
+        .querySelector("#color-theme")
+        .addEventListener("input", (event) => {
+          const r = parseInt(event.target.value.slice(1, 3), 16)
+          const g = parseInt(event.target.value.slice(3, 5), 16)
+          const b = parseInt(event.target.value.slice(5, 7), 16)
+
+          document
+            .querySelector(":root")
+            .style.setProperty("--bs-primary", event.target.value)
+
+          document
+            .querySelector(":root")
+            .style.setProperty("--bs-primary-rgb", `${r}, ${g}, ${b}`)
+        })
+    </script>
   </body>
 </html>

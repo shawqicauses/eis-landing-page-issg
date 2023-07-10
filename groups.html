@@ -11,34 +11,55 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./issgate-logo.svg" />
     <!-- HTML Meta Tags -->
     <title>Sundouq Group</title>
     <meta name="description" content="Sundouq Group Description" />
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Sundouq Group" />
     <meta itemprop="description" content="Sundouq Group Description" />
-    <meta itemprop="image" content="" />
+    <meta itemprop="image" content="./images/about-us.jpg" />
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://sundouq.group" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sundouq.group" />
     <meta property="og:title" content="Sundouq Group" />
     <meta property="og:description" content="Sundouq Group Description" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="./images/about-us.jpg" />
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="" />
+    <meta name="twitter:card" />
     <meta name="twitter:title" content="Sundouq Group" />
     <meta name="twitter:description" content="Sundouq Group Description" />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="./images/about-us.jpg" />
   </head>
-  <body class="groups groups-body-bg">
+  <body
+    class="d-flex flex-column justify-content-center align-items-stretch groups groups-body-bg">
     <!-- Navbar:Starts -->
     <nav class="navbar navbar-expand-xl navbar-dark bg-primary w-100 py-4">
-      <div class="container justify-content-center">
+      <div
+        class="container position-relative flex-wrap justify-content-center gap-4">
         <a href="#home" class="navbar-brand">
-          <h1 class="m-0 text-warning" style="font-size: 3rem">
+          <h1 class="m-0 text-warning" style="font-size: 2.25rem">
             SUNDOUQ GROUP
           </h1>
         </a>
+        <div class="dropdown languages-dropdown" style="list-style: none">
+          <a
+            href="#"
+            role="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            class="btn btn-outline-light dropdown-toggle">
+            English
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#" class="dropdown-item">English</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Arabic</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Navbar:Ends -->
@@ -46,19 +67,19 @@
       <div class="container">
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="#" class="services-item">
+            <a href="#" class="services-item align-items-center">
               <img src="./images/fulfillment.jpg" class="services-image" />
               <h3 class="services-heading">Fulfillment</h3>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="#" class="services-item">
+            <a href="#" class="services-item align-items-center">
               <img src="./images/commerce.jpg" class="services-image" />
               <h3 class="services-heading">E-Commerce</h3>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="#" class="services-item">
+            <a href="#" class="services-item align-items-center">
               <img src="./images/it.jpg" class="services-image" />
               <h3 class="services-heading">IT Solutions</h3>
             </a>
@@ -66,18 +87,14 @@
         </div>
       </div>
     </section>
-    <section class="section bg-white py-5 mb-0">
+    <section class="section bg-white py-4 mb-0" style="margin-top: auto">
       <div class="container">
         <div class="row g-4 g-lg-2">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="d-flex justify-content-start align-items-center gap-3">
               <div
                 class="groups-contact-icon d-flex justofy-content-center align-items-center">
-                <ion-icon
-                  name="call"
-                  style="font-size: 2rem"
-                  role="img"
-                  class="md hydrated"></ion-icon>
+                <ion-icon name="call" style="font-size: 2rem"></ion-icon>
               </div>
               <span
                 class="d-flex flex-column justify-content-center align-items-start gap-2">
@@ -90,11 +107,7 @@
             <div class="d-flex justify-content-start align-items-center gap-3">
               <div
                 class="groups-contact-icon d-flex justofy-content-center align-items-center">
-                <ion-icon
-                  name="mail"
-                  style="font-size: 2rem"
-                  role="img"
-                  class="md hydrated"></ion-icon>
+                <ion-icon name="mail" style="font-size: 2rem"></ion-icon>
               </div>
               <span
                 class="d-flex flex-column justify-content-center align-items-start gap-2">
@@ -109,11 +122,7 @@
             <div class="d-flex justify-content-start align-items-center gap-3">
               <div
                 class="groups-contact-icon d-flex justofy-content-center align-items-center">
-                <ion-icon
-                  name="time"
-                  style="font-size: 2rem"
-                  role="img"
-                  class="md hydrated"></ion-icon>
+                <ion-icon name="time" style="font-size: 2rem"></ion-icon>
               </div>
               <span
                 class="d-flex flex-column justify-content-center align-items-start gap-2">
@@ -126,11 +135,7 @@
             <div class="d-flex justify-content-start align-items-center gap-3">
               <div
                 class="groups-contact-icon d-flex justofy-content-center align-items-center">
-                <ion-icon
-                  name="location"
-                  style="font-size: 2rem"
-                  role="img"
-                  class="md hydrated"></ion-icon>
+                <ion-icon name="location" style="font-size: 2rem"></ion-icon>
               </div>
               <span
                 class="d-flex flex-column justify-content-center align-items-start gap-2">
@@ -144,7 +149,7 @@
         </div>
       </div>
     </section>
-    <footer class="section bg-primary py-5 mb-0">
+    <footer class="section bg-primary py-4 mb-0">
       <div class="container">
         <div class="row">
           <div
@@ -154,26 +159,6 @@
               <p class="fs-6 fw-normal lh-1 text-white mb-0">
                 Copyright © 2023 - All Rights Reserved - Sundouq Group
               </p>
-              <div class="flex gap-3">
-                <li class="dropdown" style="list-style: none">
-                  <a
-                    class="btn btn-outline-light dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    English
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#" class="dropdown-item">English</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-item">Arabic</a>
-                    </li>
-                  </ul>
-                </li>
-              </div>
             </div>
             <ul
               class="flex justify-content-start gap-4 p-0 m-0"
@@ -182,36 +167,28 @@
                 <a href="#" class="flex footer-social-item">
                   <ion-icon
                     name="logo-twitter"
-                    style="font-size: 1.5rem"
-                    role="img"
-                    class="md hydrated"></ion-icon>
+                    style="font-size: 1.5rem"></ion-icon>
                 </a>
               </li>
               <li>
                 <a href="#" class="flex footer-social-item">
                   <ion-icon
                     name="logo-facebook"
-                    style="font-size: 1.5rem"
-                    role="img"
-                    class="md hydrated"></ion-icon>
+                    style="font-size: 1.5rem"></ion-icon>
                 </a>
               </li>
               <li>
                 <a href="#" class="flex footer-social-item">
                   <ion-icon
                     name="logo-instagram"
-                    style="font-size: 1.5rem"
-                    role="img"
-                    class="md hydrated"></ion-icon>
+                    style="font-size: 1.5rem"></ion-icon>
                 </a>
               </li>
               <li>
                 <a href="#" class="flex footer-social-item">
                   <ion-icon
                     name="logo-youtube"
-                    style="font-size: 1.5rem"
-                    role="img"
-                    class="md hydrated"></ion-icon>
+                    style="font-size: 1.5rem"></ion-icon>
                 </a>
               </li>
             </ul>
@@ -219,6 +196,69 @@
         </div>
       </div>
     </footer>
+    <section class="bg-white py-3">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-between align-items-center gap-4">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./issgate-logo.svg" class="issgate-logo" />
+              </div>
+              <h3 class="fs-6 lh-1 text-muted mb-0">
+                Designed & Developed By
+                <a href="https://issgate.com" class="text-dark">
+                  ISSGate.com
+                </a>
+              </h3>
+            </div>
+            <ul
+              class="flex justify-content-start gap-2 p-0 m-0"
+              style="list-style: none">
+              <li>
+                <a
+                  href="#"
+                  class="flex footer-social-item footer-social-item-small footer-social-item-cyan">
+                  <ion-icon
+                    name="logo-twitter"
+                    style="font-size: 1.5rem"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex footer-social-item footer-social-item-small footer-social-item-blue">
+                  <ion-icon
+                    name="logo-facebook"
+                    style="font-size: 1.5rem"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex footer-social-item footer-social-item-small footer-social-item-pink">
+                  <ion-icon
+                    name="logo-instagram"
+                    style="font-size: 1.5rem"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex footer-social-item footer-social-item-small footer-social-item-red">
+                  <ion-icon
+                    name="logo-youtube"
+                    style="font-size: 1.5rem"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <p class="lh-1 text-dark mb-0" style="--bs-text-opacity: 0.75">
+              Copyright Reserved 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- JavaScript:Starts -->
     <!-- Bootstrap JavaScript -->
     <script

@@ -10878,16 +10878,47 @@ body {
   width: 125rem;
 }
 .footer-social-item {
-  width: 3rem;
-  height: 3rem;
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  color: var(--bs-white);
   background: var(--bs-secondary);
   border-radius: 50%;
-  color: var(--bs-white);
   transition: all 0.2s ease;
 }
-.footer-social-item:hover {
+.footer-social-item-small {
+  --size: 2.5rem;
+  color: var(--bs-primary);
   background: var(--bs-white);
-  color: var(--bs-secondary);
+  border-radius: 50%;
+}
+.footer-social-item-cyan {
+  color: var(--bs-cyan);
+}
+.footer-social-item-cyan:hover {
+  color: var(--bs-white);
+  background: var(--bs-cyan);
+}
+.footer-social-item-blue {
+  color: var(--bs-blue);
+}
+.footer-social-item-blue:hover {
+  color: var(--bs-white);
+  background: var(--bs-blue);
+}
+.footer-social-item-pink {
+  color: var(--bs-pink);
+}
+.footer-social-item-pink:hover {
+  color: var(--bs-white);
+  background: var(--bs-pink);
+}
+.footer-social-item-red {
+  color: var(--bs-red);
+}
+.footer-social-item-red:hover {
+  color: var(--bs-white);
+  background: var(--bs-red);
 }
 .footer input::placeholder {
   color: var(--bs-white);
@@ -10911,7 +10942,7 @@ body {
 }
 
 .groups-body-bg {
-  min-height: 100%;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(69, 23, 69, 0.75), rgba(69, 23, 69, 0.75)), url(./images/groups.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10928,7 +10959,7 @@ body {
   color: var(--bs-secondary);
 }
 .groups .services-item {
-  padding: 1.25rem;
+  padding: 0.75rem;
 }
 .groups .services-item:hover {
   background: var(--bs-warning);
@@ -10937,5 +10968,24 @@ body {
   width: 100%;
   aspect-ratio: 19/16;
   border-radius: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.groups .services-heading {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.groups .languages-dropdown {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 64rem) {
+  .groups .languages-dropdown {
+    position: static;
+    transform: none;
+  }
+}
+.groups .issgate-logo {
+  width: 1.5rem;
 }

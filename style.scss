@@ -215,16 +215,55 @@ body {
 
   &-social {
     &-item {
-      width: 3rem;
-      height: 3rem;
+      --size: 3rem;
+      width: var(--size);
+      height: var(--size);
+      color: var(--bs-white);
       background: var(--bs-secondary);
       border-radius: 50%;
-      color: var(--bs-white);
       transition: all 0.2s ease;
 
-      &:hover {
+      &-small {
+        --size: 2.5rem;
+        color: var(--bs-primary);
         background: var(--bs-white);
-        color: var(--bs-secondary);
+        border-radius: 50%;
+      }
+
+      &-cyan {
+        color: var(--bs-cyan);
+
+        &:hover {
+          color: var(--bs-white);
+          background: var(--bs-cyan);
+        }
+      }
+
+      &-blue {
+        color: var(--bs-blue);
+
+        &:hover {
+          color: var(--bs-white);
+          background: var(--bs-blue);
+        }
+      }
+
+      &-pink {
+        color: var(--bs-pink);
+
+        &:hover {
+          color: var(--bs-white);
+          background: var(--bs-pink);
+        }
+      }
+
+      &-red {
+        color: var(--bs-red);
+
+        &:hover {
+          color: var(--bs-white);
+          background: var(--bs-red);
+        }
       }
     }
   }
@@ -272,7 +311,7 @@ body {
 // Groups Page
 .groups {
   &-body-bg {
-    min-height: 100%;
+    min-height: 100vh;
     background-image: linear-gradient(
         rgb(69, 23, 69, 0.75),
         rgb(69, 23, 69, 0.75)
@@ -295,7 +334,7 @@ body {
   }
 
   .services-item {
-    padding: 1.25rem;
+    padding: 0.75rem;
 
     &:hover {
       background: var(--bs-warning);
@@ -306,6 +345,27 @@ body {
     width: 100%;
     aspect-ratio: 19 / 16;
     border-radius: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .services-heading {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .languages-dropdown {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: 64rem) {
+      position: static;
+      transform: none;
+    }
+  }
+
+  .issgate-logo {
+    width: 1.5rem;
   }
 }
